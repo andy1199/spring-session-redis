@@ -9,7 +9,7 @@
 </head>
 <body>
 	<%
-		request.getSession().setAttribute("user", new User("zs", 5));
+		request.getSession().setAttribute("user", new User("zhangsan", 5));
 	%>
 	jsessionid=${pageContext.session.id}
 	
