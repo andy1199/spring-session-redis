@@ -10,7 +10,7 @@ public class User implements Serializable
      */
     private static final long serialVersionUID = -5654418863461227475L;
     private String username;
-    private int age;
+    private String password;
 
     public String getUsername()
     {
@@ -22,14 +22,14 @@ public class User implements Serializable
         this.username = username;
     }
 
-    public int getAge()
+    public String getPassword()
     {
-        return age;
+        return password;
     }
 
-    public void setAge(int age)
+    public void setPassword(String password)
     {
-        this.age = age;
+        this.password = password;
     }
 
     public static long getSerialversionuid()
@@ -37,11 +37,11 @@ public class User implements Serializable
         return serialVersionUID;
     }
 
-    public User(String username, int age)
+    public User(String username, String age)
     {
         super();
         this.username = username;
-        this.age = age;
+        this.password = age;
     }
 
 }

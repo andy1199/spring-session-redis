@@ -5,14 +5,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>index</title>
 </head>
 <body>
-	<%
-		request.getSession().setAttribute("user", new User("zhangsan", 5));
-	%>
-	jsessionid=${pageContext.session.id}
-	
+<%--	<%--%>
+<%--		request.getSession().setAttribute("user", new User("zhangsan", "123456"));--%>
+<%--	%>--%>
+<%--	jsessionid=${pageContext.session.id}--%>
+
+<h2>Hello World</h2>
 	<br />
 	${user.username}
 	<br />
