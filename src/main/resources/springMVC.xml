@@ -35,9 +35,9 @@
 	</bean>
 
 	<!-- 配置spring-session -->
-	<bean id="sessionTimeoutConfig" class="org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration">
-		<!-- session过期时间,单位是秒 -->
-		<property name="maxInactiveIntervalInSeconds" value="30"></property>
-	</bean>
+	<!--<bean id="sessionTimeoutConfig" class="org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration">-->
+	<!--	&lt;!&ndash; session过期时间,单位是秒 &ndash;&gt;-->
+	<!--	<property name="maxInactiveIntervalInSeconds" value="30"></property>-->
+	<!--</bean>-->
 
 </beans>

@@ -21,15 +21,16 @@ public class IndexController
     private final Gson gson = new GsonBuilder().setDateFormat("yyyyMMddHHmmss").create();
 
     @RequestMapping(value = "login")
-    public String login(HttpServletRequest request, String username){
-
-        request.getSession().setAttribute("user", gson.toJson(new User(username,"123456")));
+    public String login(HttpServletRequest request, String username)
+    {
+        request.getSession().setAttribute("user", gson.toJson(new User(username, "123456")));
 
         return "login";
     }
 
     @RequestMapping(value = "index")
-    public String index(HttpServletRequest request, Model model){
+    public String index(HttpServletRequest request, Model model)
+    {
 
         User user = gson.fromJson(request.getSession().getAttribute("user").toString(), User.class);
 
